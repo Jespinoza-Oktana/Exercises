@@ -27,12 +27,7 @@ public class TestExercise1 extends Base{
         mainPage.toSignIn();
         authenticationPage.toSignIn(email,firstName,lastName,password,address,city,postalCod,mobilePhone,alias);
         Assert.assertTrue(myAccountPage.checkRegistration());
-        System.out.println("succes1");
-
     }
-
-
-
 
     @AfterTest
     public void closeDriver(){

@@ -4,8 +4,13 @@
     <test name="Test Sign Up">
         <classes>
             <class name="TestExercise1"/>
+        </classes>
+    </test>
+    <test name="Test Contact Us">
+        <classes>
             <class name="TestExercise2"/>
         </classes>
     </test>
+
 
 </suite>

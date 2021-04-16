@@ -20,5 +20,4 @@ public class MyAccountPage {
     public boolean checkRegistration(){
         return successRegistration.isDisplayed();
     }
-
 }

@@ -42,6 +42,4 @@ public class ContactPage {
     public boolean successIsDisplayed(){
         return successMessage.isDisplayed();
     }
-
-
 }

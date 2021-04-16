@@ -17,18 +17,17 @@ public class TestExercise2 extends Base{
         contactPage = new ContactPage(driver);
         driver.get(mainPage.getUrl());
     }
+
     @Test(dataProvider = "contact message", dataProviderClass = DataProvider.class)
     @Description("Test of the Exercise 2")
     public void testExercise2(String email, String reference, String message){
         mainPage.contact();
         contactPage.message(email,reference,message);
         Assert.assertTrue(contactPage.successIsDisplayed());
-        System.out.println("succes2");
     }
 
     @AfterTest
     public void closeDriver(){
         driver.quit();
     }
-
 }

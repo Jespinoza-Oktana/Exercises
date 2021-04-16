@@ -13,7 +13,6 @@ public class AuthenticationPage {
     private final WebDriver driver;
     public WebDriverWait wait;
 
-
     @FindBy(id = "email_create")
     WebElement sendEmail;
 
@@ -71,6 +70,4 @@ public class AuthenticationPage {
         enterAlias.sendKeys(alias);
         registerAccount.click();
     }
-
-
 }
